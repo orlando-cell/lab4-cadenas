@@ -9,7 +9,14 @@
 # Autor: Cristian Omar Huamán Rojas
 # PEGA AQUÍ TU CÓDIGO (métodos de manipulación de texto)
 # ------------------------------------------------------------
-
+def manipular_cadena():
+    texto = "Bienvenidos al laboratorio de Fundamentos de Programación"
+    print("\n Texto original:", texto)
+    print(" Substring (0:11):", texto[0:11])
+    print(" IndexOf 'laboratorio':", texto.find("laboratorio"))
+    print(" Replace 'laboratorio' por 'taller':", texto.replace("laboratorio", "taller"))
+    print(" Split por espacios:", texto.split())
+    return texto
 
 
 # ------------------------------------------------------------
