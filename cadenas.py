@@ -74,5 +74,37 @@ def probar_busqueda_y_ordenamiento():
 # ------------------------------------------------------------
 # MENÚ PRINCIPAL Y PRUEBAS
 # Autor: Anthony Rene Terraz Terrones
-# PEGA AQUÍ TU CÓDIGO (main, menú, pruebas)
 # ------------------------------------------------------------
+def mostrar_menu():
+    print("\n" + "=" * 45)
+    print("   LABORATORIO N° 4 - CADENAS Y ARREGLOS")
+    print("=" * 45)
+    print("1. Manipulación de cadenas")
+    print("2. Listas paralelas")
+    print("3. Estructuras combinadas")
+    print("4. Búsqueda textual y ordenamiento")
+    print("5. Salir")
+    print("=" * 45)
+
+def main():
+    opcion = ""
+    while opcion != "5":
+        mostrar_menu()
+        opcion = input("Seleccione una opción: ").strip()
+
+        if opcion == "1":
+            manipular_cadena()
+        elif opcion == "2":
+            probar_listas_paralelas()
+        elif opcion == "3":
+            usuarios = crear_usuarios()
+            mostrar_usuarios(usuarios)
+        elif opcion == "4":
+            probar_busqueda_y_ordenamiento()
+        elif opcion == "5":
+            print("\nSaliendo del sistema.")
+        else:
+            print("\nOpción inválida.")
+
+if __name__ == "__main__":
+    main()
