@@ -7,7 +7,6 @@
 # ------------------------------------------------------------
 # ETAPA 1: MANIPULACIÓN DE CADENAS (substring, indexOf, replace, split)
 # Autor: Cristian Omar Huamán Rojas
-# PEGA AQUÍ TU CÓDIGO (métodos de manipulación de texto)
 # ------------------------------------------------------------
 def manipular_cadena():
     texto = "Bienvenidos al laboratorio de Fundamentos de Programación"
@@ -22,7 +21,6 @@ def manipular_cadena():
 # ------------------------------------------------------------
 # ETAPA 2: LISTAS PARALELAS (nombres y edades)
 # Autor: Álvaro Leandro Gutiérrez Carranza
-# PEGA AQUÍ TU CÓDIGO (búsqueda por nombre, retorno de edad)
 # ------------------------------------------------------------
 def buscar_por_nombre(nombres, edades, nombre_buscar):
     if nombre_buscar in nombres:
@@ -45,10 +43,20 @@ def probar_listas_paralelas():
 # ------------------------------------------------------------
 # ETAPA 3: ESTRUCTURAS COMBINADAS (lista de diccionarios)
 # Autor: Zinedine Michael Callirgos Cabanillas
-# PEGA AQUÍ TU CÓDIGO (crear estructura, mostrar datos)
 # ------------------------------------------------------------
 
+def crear_usuarios():
+    usuarios = [
+        {"nombre": "Juan", "email": "juan@upn.pe", "ciudad": "Cajamarca"},
+        {"nombre": "María", "email": "maria@upn.pe", "ciudad": "Lima"},
+        {"nombre": "Pedro", "email": "pedro@upn.pe", "ciudad": "Cajamarca"}
+    ]
+    return usuarios
 
+def mostrar_usuarios(usuarios):
+    print("\n  Lista de usuarios:")
+    for u in usuarios:
+        print(f"    - {u['nombre']} | {u['email']} | {u['ciudad']}")
 
 # ------------------------------------------------------------
 # ETAPA 4: BÚSQUEDA TEXTUAL Y ORDENAMIENTO
