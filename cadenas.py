@@ -24,7 +24,22 @@ def manipular_cadena():
 # Autor: Álvaro Leandro Gutiérrez Carranza
 # PEGA AQUÍ TU CÓDIGO (búsqueda por nombre, retorno de edad)
 # ------------------------------------------------------------
+def buscar_por_nombre(nombres, edades, nombre_buscar):
+    if nombre_buscar in nombres:
+        pos = nombres.index(nombre_buscar)
+        print(f"\n{nombre_buscar} tiene {edades[pos]} años.")
+        return edades[pos]
+    else:
+        print(f"\n{nombre_buscar} no se encuentra en la lista.")
+        return None
 
+def probar_listas_paralelas():
+    nombres = ["Juan", "María", "Pedro", "Ana", "Luis"]
+    edades = [20, 22, 21, 19, 23]
+    print("\n  Listas paralelas:")
+    for i in range(len(nombres)):
+        print(f"    {nombres[i]} -> {edades[i]} años")
+    buscar_por_nombre(nombres, edades, "María")
 
 
 # ------------------------------------------------------------
